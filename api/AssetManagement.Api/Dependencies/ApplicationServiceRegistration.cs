@@ -1,4 +1,5 @@
 ﻿
+using AssetManagement.Api.Client;
 using AssetManagement.Application.Models.Assets.Queries;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
@@ -11,6 +12,8 @@ namespace AssetManagement.Api
         {
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+
+            services.AddTransient<IAPIClient, APIClient>();
         }
     }
 }
