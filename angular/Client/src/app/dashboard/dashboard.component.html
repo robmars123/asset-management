@@ -1,0 +1,35 @@
+<form>
+	<div class="mb-3 row">
+		<label for="table-filtering-search" class="col-xs-3 col-sm-auto col-form-label">Full text search:</label>
+		<div class="col-xs-3 col-sm-auto">
+			<input [(ngModel)]="filter" (input)="filterResults($event)" [ngModelOptions]="{standalone: true}">
+		</div>
+	</div>
+</form>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Id</th>
+			<th scope="col">Device Description</th>
+			<th scope="col">Employee Id</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (asset of filteredList; track asset.description) {
+			<tr>
+				<td>
+					<ngb-highlight [result]="asset.description" [term]="filter" />
+				</td>
+				<td><ngb-highlight [result]="asset.id | number" [term]="filter" /></td>
+				<td><ngb-highlight [result]="asset.description" [term]="filter" /></td>
+                <td><ngb-highlight [result]="asset.employeeId | number" [term]="filter" /></td>
+			</tr>
+		} @empty {
+			<tr>
+				<td colspan="4" style="text-align: center">No countries found</td>
+			</tr>
+		}
+	</tbody>
+</table>
