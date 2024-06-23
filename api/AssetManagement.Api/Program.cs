@@ -25,12 +25,9 @@ namespace AssetManagement.Api
             builder.Services.AddDbContextPool<AssetManagementDBContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("Default"), b => b.MigrationsAssembly("AssetManagement.Persistence")));
 
-            builder.Services.AddCors(opt =>
+            builder.Services.AddCors(options =>
             {
-                opt.AddPolicy("CorsPolicy", policy =>
-                {
-                    policy.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:4200");
-                });
+                options.AddPolicy("Open", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             });
 
             //TODO: Move to Dependencies folder
@@ -53,6 +50,8 @@ namespace AssetManagement.Api
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors("Open");
 
             app.UseAuthorization();
 
