@@ -3,29 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetManagement.Api.Client", "AssetManagement.Api.Client\AssetManagement.Api.Client.csproj", "{9BF01436-8445-4559-9277-339BF660AC0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetManagement.Api.Client", "AssetManagement.Api.Client\AssetManagement.Api.Client.csproj", "{9BF01436-8445-4559-9277-339BF660AC0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetManagement.Domain", "AssetManagement.Domain\AssetManagement.Domain.csproj", "{1A33CD32-47E4-4F0A-A4E6-8500E2530EB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetManagement.Domain", "AssetManagement.Domain\AssetManagement.Domain.csproj", "{1A33CD32-47E4-4F0A-A4E6-8500E2530EB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetManagement.Infrastructure", "AssetManagement.Infrastructure\AssetManagement.Infrastructure.csproj", "{0BC15A3A-B16B-44C6-AC11-BF5EEBC843EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetManagement.Infrastructure", "AssetManagement.Infrastructure\AssetManagement.Infrastructure.csproj", "{0BC15A3A-B16B-44C6-AC11-BF5EEBC843EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetManagement.Application", "AssetManagement.Application\AssetManagement.Application.csproj", "{96C837FA-CCED-4941-BA51-85A429D17A34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetManagement.Application", "AssetManagement.Application\AssetManagement.Application.csproj", "{96C837FA-CCED-4941-BA51-85A429D17A34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetManagement.Identity", "AssetManagement.Identity\AssetManagement.Identity.csproj", "{6E3704F8-B3A8-4742-A579-C84F23278DEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetManagement.Identity", "AssetManagement.Identity\AssetManagement.Identity.csproj", "{6E3704F8-B3A8-4742-A579-C84F23278DEF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C12C3E84-5D7A-4A28-AC2E-727914011A7C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E9F96771-8DF3-4599-89FB-1909506AD067}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetManagement.Api", "AssetManagement.Api\AssetManagement.Api.csproj", "{90008C14-0A09-4D15-9044-2E8AA195675D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetManagement.Api", "AssetManagement.Api\AssetManagement.Api.csproj", "{90008C14-0A09-4D15-9044-2E8AA195675D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetManagement.Persistence", "AssetManagement.Persistence\AssetManagement.Persistence.csproj", "{B56A8870-F405-40CD-8137-298946134F2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetManagement.Persistence", "AssetManagement.Persistence\AssetManagement.Persistence.csproj", "{B56A8870-F405-40CD-8137-298946134F2B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4AA74F27-EA59-4DB8-8986-F8E4157DBBC3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{41C4EDA6-EAB1-4366-A1CF-E2D4742F8755}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetManagement.Application.Tests", "AssetManagement.Application.Tests\AssetManagement.Application.Tests.csproj", "{512C9F20-ED6E-4496-85E9-A94AE402CE27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetManagement.Application.Tests", "AssetManagement.Application.Tests\AssetManagement.Application.Tests.csproj", "{512C9F20-ED6E-4496-85E9-A94AE402CE27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

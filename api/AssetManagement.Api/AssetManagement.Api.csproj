@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AssetManagement.Api.Client\AssetManagement.Api.Client.csproj" />
     <ProjectReference Include="..\AssetManagement.Application\AssetManagement.Application.csproj" />
     <ProjectReference Include="..\AssetManagement.Persistence\AssetManagement.Persistence.csproj" />
   </ItemGroup>
